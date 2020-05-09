@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using Google.Cloud.Translation.V2;
 using Newtonsoft.Json;
-using Formatting = System.Xml.Formatting;
+
 
 namespace JsonTranslate
 {
@@ -17,7 +17,7 @@ namespace JsonTranslate
             Console.WriteLine("====================");
             try
             {
-                List<string> lang = new List<string> { "da", "sv" };
+                List<string> lang = new List<string> {"nl", "da", "sv" };
 
                 Program prog = new Program();
                 prog.TranslateFile("en", @"c:\Temp\trans\", lang);
